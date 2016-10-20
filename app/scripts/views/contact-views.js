@@ -19,7 +19,16 @@ var ContactListView = Backbone.View.extend({
 
 var ContactItemView = Backbone.View.extend({
   tagName: 'li',
-  className: 'list-group-item'
+  className: 'list-group-item',
+  template: contactListTemplate,
+  render: function(){
+    var contextObject = this.model.toJSON();
+    var renderedContactTemplate = this.template(contextObject);
+
+    this.$el.html(renderedContactTemplate);
+
+    return this;
+  },
 });
 
 module.exports = {
