@@ -5,7 +5,8 @@ var views = require('./views/contact-views.js');
 $(function(){
   var contactsCollection = new models.ContactsCollection();
 
-
+  var myContactList = new views.ContactListView({collection: contactsCollection});
+  $('.contact-list-container').append(myContactList.render().el);
 
 
 

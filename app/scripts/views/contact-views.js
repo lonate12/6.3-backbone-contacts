@@ -21,3 +21,8 @@ var ContactItemView = Backbone.View.extend({
   tagName: 'li',
   className: 'list-group-item'
 });
+
+module.exports = {
+  ContactListView: ContactListView,
+  ContactItemView: ContactItemView
+};
