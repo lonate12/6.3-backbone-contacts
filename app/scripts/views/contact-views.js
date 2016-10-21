@@ -36,7 +36,8 @@ var ContactItemView = Backbone.View.extend({
   },
   toggleShow: function(e){
     e.preventDefault();
-    $('.additional-contact-info').slideToggle();
+    var id = this.model.get('_id');
+    this.$el.children('.additional-contact-info').slideToggle();
   }
 });
 
