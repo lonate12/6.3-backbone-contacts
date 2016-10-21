@@ -15,3 +15,30 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+.app-header {
+  color: white;
+  background-color: darkgrey;
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: grey;
+  padding: 0;
+
+  .additional-contact-info {
+    background-color: darkgrey;
+  }
+
+  p {
+    margin: 0;
+    padding: 5px;
+    color: white;
+
+  }
+
+  :hover {
+    background-color: lightgrey;
+    color: grey;
+  }
+}
